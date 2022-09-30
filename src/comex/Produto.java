@@ -8,6 +8,28 @@ public class Produto {
 		int quantidadeEmEstoque;
 		String categoria;
 		
+		
+		
+		public double calculaValorTotalEmEstoque(double preco, double quantidade ) {
+			preco = precoUnitario;
+			quantidade = quantidadeEmEstoque;
+			double valor;
+			
+			
+			valor = preco * quantidade;
+			
+			
+		return valor;
+		
+					
+		}
+		
+		
+		
+		
+		
+		
+		
 		public int getId() {
 			return id;
 		}		

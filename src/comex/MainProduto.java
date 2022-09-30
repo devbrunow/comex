@@ -31,11 +31,11 @@ public class MainProduto {
 		produto3.setCategoria("Informática");
 		
 		System.out.println(produto1.id + " " + produto1.nome + " " + produto1.descricao + " " + produto1.precoUnitario + " " +
-				produto1.quantidadeEmEstoque + " "	+ produto1.categoria   );
+				produto1.quantidadeEmEstoque + " "	+ produto1.categoria   + " " + produto1.calculaValorTotalEmEstoque(3523.00, 1 ));
 		System.out.println(produto2.id + " " + produto1.nome + " " + produto1.descricao + " " + produto2.precoUnitario + " " +
-				produto2.quantidadeEmEstoque + " "	+ produto2.categoria   );
+				produto2.quantidadeEmEstoque + " "	+ produto2.categoria + " " + produto2.calculaValorTotalEmEstoque(102.90, 2   ));
 		System.out.println(produto3.id + " " + produto3.nome + " " + produto3.descricao + " " + produto3.precoUnitario + " " +
-				produto3.quantidadeEmEstoque + " "	+ produto3.categoria   );
-	
+				produto3.quantidadeEmEstoque + " "	+ produto3.categoria + " " + produto3.calculaValorTotalEmEstoque(1889.00, 3));
+		
 	}
 }
