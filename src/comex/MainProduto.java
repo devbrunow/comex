@@ -36,6 +36,9 @@ public class MainProduto {
 				produto2.quantidadeEmEstoque + " "	+ produto2.categoria + " " + produto2.calculaValorTotalEmEstoque(102.90, 2   ));
 		System.out.println(produto3.id + " " + produto3.nome + " " + produto3.descricao + " " + produto3.precoUnitario + " " +
 				produto3.quantidadeEmEstoque + " "	+ produto3.categoria + " " + produto3.calculaValorTotalEmEstoque(1889.00, 3));
+		System.out.println(produto3.id + " " + produto3.nome + " " + produto3.descricao + " " + produto3.precoUnitario + " " +
+				produto3.quantidadeEmEstoque + " "	+ produto3.categoria + " " + produto3.calculaValorTotalEmEstoque(1889.00, 3));
+		
 		
 	}
 }
