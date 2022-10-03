@@ -3,7 +3,7 @@ package comex;
 public class MainProduto {
 	public static void main(String[] args) {
 	
-		Produto produto1 = new Produto();
+		Produto produto1 = new Produto(null, null, 0, 0, null);
 		produto1.setId(1);
 		produto1.setNome("Notebook Samsung");
 		produto1.setDescricao("");
@@ -13,7 +13,7 @@ public class MainProduto {
 		
 
 	
-		Produto produto2 = new Produto();
+		Produto produto2 = new Produto(null, null, 0, 0, null);
 		produto2.setId(1);
 		produto2.setNome("Clean Architecture");
 		produto2.setDescricao("");
@@ -22,7 +22,7 @@ public class MainProduto {
 		produto2.setCategoria("Livros");
 		
 		
-		Produto produto3 = new Produto();
+		Produto produto3 = new Produto(null, null, 0, 0, null);
 		produto3.setId(1);
 		produto3.setNome("Monitor Dell 27,");
 		produto3.setDescricao("");

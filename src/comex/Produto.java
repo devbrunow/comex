@@ -1,15 +1,25 @@
 package comex;
 
 public class Produto {
-		int id;
-		String nome;
-		String descricao;
-		double precoUnitario;
+		protected int id;
+		protected String nome;
+		protected String descricao;
+		protected double precoUnitario;
 		int quantidadeEmEstoque;
-		String categoria;
+		protected String categoria;
 		
 		
 		
+		public Produto(String nome2, String descricao2, double precoUnitario2, int quantidadeEstoque, Categoria categoria2) {
+			// TODO Auto-generated constructor stub
+		}
+
+
+
+
+
+
+
 		public double calculaValorTotalEmEstoque(double preco, double quantidade ) {
 			preco = precoUnitario;
 			quantidade = quantidadeEmEstoque;
@@ -77,7 +87,6 @@ public class Produto {
 	public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
 		this.quantidadeEmEstoque = quantidadeEmEstoque;
 	}
-	
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
