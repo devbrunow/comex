@@ -7,16 +7,29 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Pedido {
 
 	private static final AtomicInteger count = new AtomicInteger(0);
-	int id;
-	String data;
-	Cliente cliente;
+	private int id;
+	private String data;
+	private Cliente cliente;
 
+	
+	public Pedido(Integer id) throws ComexExcepetion {
+		
+		this.id = id;
+		
+		
+	}
+	
+	
 	public Pedido(String data, Cliente cliente) throws ComexExcepetion {
 
 		this.id = count.incrementAndGet();
 		this.data = data;
 		this.cliente = cliente;
 
+	}
+
+	public Pedido() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public final static DateTimeFormatter formataData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -54,7 +67,10 @@ public class Pedido {
 	@Override
 	public String toString() {
 
-		return "|" + this.id + "|" + "     " + "|" + this.data + "|" + "       " + "|" + this.cliente.getNome() + "|";
+		return "ID Pedido: " + "|" + this.id + "|"  +  System.lineSeparator()
+	+ "Data do pedido: "+ "   " + "|" + this.data + "|" + "   " 
+	+  System.lineSeparator()+ "ID do cliente: "		+ "|" + this.cliente.getId() + "|"+  System.lineSeparator()
+				+ System.lineSeparator();
 	}
 
 }
